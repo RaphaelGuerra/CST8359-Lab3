@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>@ViewData["Welcome to my world!"]</title>
+        <link href="~/css/StyleSheet.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to my world!</h1>
+            My name is: Guerra, Raphael
+            <br />
+            <br />
+            @Html.ActionLink("Home", "Index", "Home")
+            @Html.ActionLink("Show the song!", "Razor", "Home")
+            @Html.ActionLink("Persons", "CreatePerson", "Home")
+        </header>
+        <div class="content">
+            @RenderBody()
+        </div>
+        <footer>
+            <h4>A layout page provides an overall container for pages on your site.</h4>
+            Created wwwroot and CSS folder directories, then created StyleSheet.css file inside the css folder following ASP.NET MVC Folder Structure.<br />
+            Created Shared folder and created _Layout.cshtml inside following ASP.NET MVC Folder Structure.<br />
+        </footer>
+    </body>
+</html>
